@@ -31,11 +31,11 @@ header h1 {
   text-align: center;
   margin-top: 0;
   margin-bottom: .25em;
-  font-family: 'Vidaloka', serif;
+  font-family: Vidaloka, serif;
 }
 
 h2, h3 {
-  font-family: 'Vidaloka', serif;
+  font-family: Vidaloka, serif;
 }
 
 header nav ul {
@@ -65,7 +65,7 @@ header nav a:hover {
   font-size: 1.125rem;
   color: #fff;
   background-color: #333;
-  padding:0.5em 0.75em;
+  padding: .5em .75em;
   border-radius: 8px;
 }
 
@@ -151,7 +151,7 @@ header nav a:hover {
   bottom: -4em;
   text-align: center;
   color: #000;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, .3);
   transition: .25s;
 }
 
@@ -175,9 +175,17 @@ header nav a:hover {
 
 .map figcaption {
   text-align: center;
-  margin: .75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   position: absolute;
   bottom: 2em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map figcaption h2 {
+  margin-top: 0
 }
 
 .points {
@@ -225,34 +233,22 @@ header nav a:hover {
   width: 60%;
 }
 
-
-.img-stack {
-  position: absolute;
+.tour {
+  text-align: center;
+  margin-bottom: 1em;
 }
 
-.img-stack img {
-  width: 100px;
+.tour h2 {
+  margin: .25em .5em;
 }
 
-.img-1 {
-  z-index: 1;
-  float: left;
-  position: relative;
-
+.tour p {
+  margin: .5em;
+  margin-top: .25rem;
 }
 
-.img-2 {
-  z-index: 2;
-  float: left;
-  position: relative;
-
-}
-
-.img-3 {
-  z-index: 3;
-  float: left;
-  position: relative;
-
+.img-1, .img-2, .img-3 {
+  width: 150px;
 }
 
 footer {
@@ -266,4 +262,28 @@ footer {
 footer p {
   text-align: center;
   margin: 0;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav a {
+    float: left;
+    width: 50%;
+    display: inline-block;
+  }
+
+  header nav {
+    padding-bottom: 72px;
+  }
+
+  .link-card figure {
+    margin: 1em;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .map figcaption {
+    bottom: 5em;
+  }
 }
