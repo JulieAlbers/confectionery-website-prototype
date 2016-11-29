@@ -134,7 +134,6 @@ footer p {
 }
 
 .collections {
-  background-color: #e2e2e2;
   padding-top: .25em;
 }
 
@@ -480,5 +479,15 @@ footer p {
   html {
     font-size: 130%;
     line-height: 1.6;
+  }
+
+  .collections {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .link-card figure {
+    margin: 1em;
   }
 }
