@@ -213,6 +213,11 @@ footer p {
   margin-bottom: .25em;
 }
 
+.points p {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .points-card {
   display: block;
   margin-left: auto;
@@ -292,6 +297,12 @@ footer p {
     bottom: 5em;
   }
 
+  .points p {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   .img-1, .img-2, .img-3 {
     width: 30%;
   }
