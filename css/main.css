@@ -59,6 +59,19 @@ header nav a:hover {
   color: #fff;
 }
 
+footer {
+  background-color: #999;
+  color: #fff;
+  margin-top: .5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -216,8 +229,8 @@ header nav a:hover {
 
 .points-img {
   display: inline-block;
-  float: left;
-  margin-left: 1em;
+  float: right;
+  margin-right: 1em;
   margin-top: .75em;
 }
 
@@ -235,7 +248,7 @@ header nav a:hover {
 
 .tour {
   text-align: center;
-  margin-bottom: 1em;
+  margin: 1em;
 }
 
 .tour h2 {
@@ -248,20 +261,12 @@ header nav a:hover {
 }
 
 .img-1, .img-2, .img-3 {
-  width: 150px;
+  width: 45%;
+  margin: .25em;
 }
 
-footer {
-  background-color: #999;
-  color: #fff;
-  margin-top: .5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-footer p {
-  text-align: center;
-  margin: 0;
+.img-3 {
+  display: none;
 }
 
 @media only screen and (min-width: 25em) {
@@ -285,5 +290,13 @@ footer p {
 
   .map figcaption {
     bottom: 5em;
+  }
+
+  .img-1, .img-2, .img-3 {
+    width: 30%;
+  }
+
+  .img-3 {
+    display: inline;
   }
 }
