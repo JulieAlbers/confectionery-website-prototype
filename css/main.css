@@ -10,7 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font: normal 100%/1.3 Arial, sans-serif;
+  font: normal 100%/1.3 Raleway, sans-serif;
 }
 
 *, *::before, *::after {
@@ -21,6 +21,249 @@ body {
   margin: 0;
 }
 
-nav a {
+header {
+  background-color: #999;
+  padding-top: .5em;
+  padding-bottom: 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: .25em;
+  font-family: 'Vidaloka', serif;
+}
+
+h2, h3 {
+  font-family: 'Vidaloka', serif;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-top: .25em;
+  margin-bottom: 0;
+}
+
+header nav a {
   display: block;
+  text-decoration: none;
+  color: #000;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+header nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #fff;
+  background-color: #333;
+  padding:0.5em 0.75em;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #000;
+}
+
+.btn-ghost {
+  border-color: #333;
+  background-color: #fff;
+  color: #666;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.btn-ghost:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.btn-subtle {
+  background-color: #ccc;
+}
+
+.btn-subtle:hover {
+  background-color: #666;
+}
+
+.btn-big {
+  font-size: 1.5rem;
+}
+
+.specials {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.specials h2 {
+  margin: .5rem;
+  margin-top: .25rem;
+}
+
+.specials figure {
+  margin: 0;
+}
+
+.specials img {
+  width: 100%;
+}
+
+.specials p {
+  margin: .5rem;
+}
+
+.collections {
+  background-color: #e2e2e2;
+  padding-top: .25em;
+}
+
+.collections h2 {
+  text-align: center;
+}
+
+.link-card figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.link-card img {
+  width: 100%;
+}
+
+.link-card figcaption p {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.link-card figcaption {
+  position: absolute;
+  width: 100%;
+  min-height: 120px;
+  bottom: -4em;
+  text-align: center;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: .25s;
+}
+
+.link-card:hover figcaption {
+  bottom: .3em;
+  transition: .25s;
+}
+
+.collections .link-card:nth-child(odd) {
+  display: none;
+}
+
+.map figure {
+  margin: 0;
+  position: relative;
+}
+
+.map img {
+  width: 100%;
+}
+
+.map figcaption {
+  text-align: center;
+  margin: .75rem;
+  position: absolute;
+  bottom: 2em;
+}
+
+.points {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #999;
+}
+
+.points h2 {
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
+.points-card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: .5em;
+  margin-top: .5em;
+  border-color: #333;
+  background-color: #e2e2e2;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 12px;
+  max-width: 275px;
+}
+
+.points-img {
+  display: inline-block;
+  float: left;
+  margin-left: 1em;
+  margin-top: .75em;
+}
+
+.points-img img {
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.points-text {
+  display: inline-block;
+  width: 60%;
+}
+
+
+.img-stack {
+  position: absolute;
+}
+
+.img-stack img {
+  width: 100px;
+}
+
+.img-1 {
+  z-index: 1;
+  float: left;
+  position: relative;
+
+}
+
+.img-2 {
+  z-index: 2;
+  float: left;
+  position: relative;
+
+}
+
+.img-3 {
+  z-index: 3;
+  float: left;
+  position: relative;
+
+}
+
+footer {
+  background-color: #999;
+  color: #fff;
+  margin-top: .5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
 }
