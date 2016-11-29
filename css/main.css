@@ -265,12 +265,16 @@ footer p {
   margin-top: .25rem;
 }
 
-.img-1, .img-2, .img-3 {
+.tour-img {
   width: 45%;
   margin: .25em;
 }
 
-.img-3 {
+.tour-img:nth-child(3) {
+  display: none;
+}
+
+.tour-img:nth-child(4) {
   display: none;
 }
 
@@ -303,11 +307,11 @@ footer p {
     margin-right: auto;
   }
 
-  .img-1, .img-2, .img-3 {
+  .tour-img {
     width: 30%;
   }
 
-  .img-3 {
+  .tour-img:nth-child(3) {
     display: inline;
   }
 }
@@ -426,22 +430,20 @@ footer p {
   }
 
   .points-logo {
-    display: inline-block;
+    float: left;
+    width: 40%;
   }
 
   .points-logo img {
     width: 200px;
+    margin: 1em;
   }
 
   .points-content {
-    display: inline-block;
+    float: left;
     text-align: left;
-    margin-left: 1em;
     margin-bottom: 1em;
-  }
-
-  .points-content p {
-    max-width: 600px;
+    width: 60%;
   }
 
   .points-perks {
@@ -449,7 +451,34 @@ footer p {
   }
 
   .points-info {
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .points p {
+    max-width: none;
+  }
+
+  .tour-img:nth-child(4) {
+    display: inline;
+  }
+
+  .tour-img {
+    width: 200px;
+  }
+
+  .tour p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.6;
   }
 }
