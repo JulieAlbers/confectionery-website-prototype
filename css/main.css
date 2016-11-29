@@ -302,12 +302,72 @@ footer p {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .img-1, .img-2, .img-3 {
     width: 30%;
   }
 
   .img-3 {
     display: inline;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+  nav a {
+    width: 25%
+  }
+
+  header nav {
+    padding-bottom: 41px;
+  }
+
+  .specials figure {
+    position: relative;
+  }
+
+  .specials figcaption {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 1em;
+    background-color: rgba(0, 0, 0, .3);
+  }
+
+  .specials figcaption p {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .link-card {
+    float: left;
+    width: 50%;
+    margin: 0;
+  }
+
+  .link-card figure {
+    margin: 0;
+    max-width: none;
+  }
+
+  .collections {
+    padding-bottom: 10em;
+  }
+  
+  .collections .link-card:nth-child(3) {
+    display: inline-block;
+  }
+
+  .map {
+        clear: both;
+  }
+
+  .map figure {
+    max-height: 400px;
+    overflow: hidden;
   }
 }
