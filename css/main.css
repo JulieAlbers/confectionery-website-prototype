@@ -400,7 +400,7 @@ footer p {
   header nav a {
     width: 120px;
     margin-left: .25em;
-    padding: .5 1;
+    padding: .5em 1em;
     border-radius: 8px;
   }
 
