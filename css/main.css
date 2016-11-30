@@ -22,7 +22,8 @@ body {
 }
 
 header {
-  background-color: #999;
+  background-color: #ff93d9;
+  color: #771f58;
   padding-top: .5em;
   padding-bottom: 0;
 }
@@ -55,13 +56,13 @@ header nav a {
 }
 
 header nav a:hover {
-  background-color: #333;
-  color: #fff;
+  background-color: #771f58;
+  color: #ffbfe8;
 }
 
 footer {
-  background-color: #999;
-  color: #fff;
+  background-color: #ff93d9;
+  color: #771f58;
   margin-top: .5em;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -76,35 +77,36 @@ footer p {
   display: inline-block;
   text-decoration: none;
   font-size: 1.125rem;
-  color: #fff;
-  background-color: #333;
+  color: #ffdbf2;
+  background-color: #b23a88;
   padding: .5em .75em;
   border-radius: 8px;
 }
 
 .btn:hover {
-  background-color: #000;
+  background-color: #771f58;
 }
 
 .btn-ghost {
-  border-color: #333;
+  border-color: #771f58;
   background-color: #fff;
-  color: #666;
+  color: #771f58;
   border-width: 3px;
   border-style: solid;
 }
 
 .btn-ghost:hover {
-  background-color: #666;
-  color: #fff;
+  background-color: #b23a88;
+  color: #ffdbf2;
 }
 
 .btn-subtle {
-  background-color: #ccc;
+  background-color: #ffdbf2;
+  color: #b23a88;
 }
 
 .btn-subtle:hover {
-  background-color: #666;
+  background-color: #ffbfe8;
 }
 
 .btn-big {
@@ -158,12 +160,12 @@ footer p {
   min-height: 120px;
   bottom: -4em;
   text-align: center;
-  color: #000;
-  background-color: rgba(0, 0, 0, .3);
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
   transition: .25s;
 }
 
-.collections .link-card:nth-child(odd) {
+.collections .link-card:nth-child(even) {
   display: none;
 }
 
@@ -191,7 +193,7 @@ footer p {
   text-align: center;
   padding-top: 1em;
   padding-bottom: 1em;
-  background-color: #999;
+  background-color: #ff93d9;
 }
 
 .points h2 {
@@ -229,9 +231,8 @@ footer p {
   margin-bottom: .5em;
   margin-top: .5em;
   border-color: #333;
-  background-color: #e2e2e2;
-  border-width: 2px;
-  border-style: solid;
+  background-color: #ffdbf2;
+  border: solid 3px #771f58;
   border-radius: 12px;
   max-width: 275px;
 }
@@ -253,6 +254,11 @@ footer p {
 .points-text {
   display: inline-block;
   width: 60%;
+}
+
+.points-logo img {
+  max-width: 250px;
+  margin: 2em;
 }
 
 .tour {
@@ -307,6 +313,10 @@ footer p {
     margin-right: auto;
   }
 
+  .points-logo img {
+    margin: 0;
+  }
+
   .tour-img {
     width: 30%;
   }
@@ -338,9 +348,10 @@ footer p {
   .specials figcaption {
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: .3em;
     padding-bottom: 1em;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
   }
 
   .specials figcaption p {
@@ -363,7 +374,7 @@ footer p {
     padding-bottom: 10em;
   }
 
-  .collections .link-card:nth-child(3) {
+  .collections .link-card:nth-child(4) {
     display: inline-block;
   }
 
@@ -415,14 +426,14 @@ footer p {
   }
 
   .specials figure figcaption {
-    top: 17.5em;
+    bottom: .4em;
   }
 
   .link-card {
     width: 33.3333%;
   }
 
-  .collections .link-card:nth-child(odd) {
+  .collections .link-card:nth-child(even) {
     display: inline;
   }
 
@@ -473,6 +484,13 @@ footer p {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 74em) {
+
+  .specials figure figcaption {
+    top: 17.5em;
   }
 }
 
