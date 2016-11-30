@@ -152,6 +152,8 @@ footer p {
 
 .link-card img {
   width: 100%;
+  overflow: hidden;
+  vertical-align:text-bottom;
 }
 
 .link-card figcaption {
@@ -222,6 +224,7 @@ footer p {
 .link-card figcaption p {
   margin-left: 1.5em;
   margin-right: 1.5em;
+  /*margin-bottom: 0;*/
 }
 
 .points-card {
@@ -403,21 +406,26 @@ footer p {
     float: left;
     padding-left: .25em;
     margin-right: .25em;
+    margin-bottom: 0;
   }
 
   header nav {
     float: left;
-    width: 60%;
     max-width: 700px;
     padding-bottom: 0;
     padding-top: .1em;
   }
 
   header nav a {
-    width: 120px;
+    text-align: center;
+    width: 140px;
     margin-left: .25em;
     padding: .5em 1em;
     border-radius: 8px;
+  }
+
+  header nav li {
+    display: inline-block;
   }
 
   .specials {
@@ -499,6 +507,10 @@ footer p {
   html {
     font-size: 130%;
     line-height: 1.6;
+  }
+
+  header h1 {
+    margin-left: 1.5em;
   }
 
   .collections {
