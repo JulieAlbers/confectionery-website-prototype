@@ -176,6 +176,7 @@ footer p {
   margin: 0;
   position: relative;
   height: 15em;
+  overflow: hidden;
 }
 
 .map img {
@@ -316,7 +317,6 @@ footer p {
   }
 
   .map figure {
-    overflow: hidden;
     height: 20em;
   }
 
