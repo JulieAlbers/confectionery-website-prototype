@@ -175,10 +175,14 @@ footer p {
 .map figure {
   margin: 0;
   position: relative;
+  height: 15em;
 }
 
 .map img {
-  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .map figcaption {
@@ -311,6 +315,11 @@ footer p {
     bottom: 5em;
   }
 
+  .map figure {
+    overflow: hidden;
+    height: 20em;
+  }
+
   .points p {
     max-width: 400px;
     margin-left: auto;
@@ -327,6 +336,18 @@ footer p {
 
   .tour-img:nth-child(3) {
     display: inline;
+  }
+}
+
+@media only screen and (min-width: 33em) {
+
+  .map img {
+    height: auto;
+    width: 100%;
+    left: auto;
+    transform: translateX(0);
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -389,6 +410,10 @@ footer p {
   .map figure {
     max-height: 400px;
     overflow: hidden;
+  }
+
+  .map img {
+    height: auto;
   }
 }
 
@@ -522,6 +547,10 @@ footer p {
 
   .link-card figure {
     margin: 1em;
+  }
+
+  .collections a:last-child {
+    margin-bottom: 1em;
   }
 
   .specials figure figcaption {
