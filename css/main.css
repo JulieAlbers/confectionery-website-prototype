@@ -153,7 +153,7 @@ footer p {
 .link-card img {
   width: 100%;
   overflow: hidden;
-  vertical-align:text-bottom;
+  vertical-align: text-bottom;
   display: block;
 }
 
@@ -234,7 +234,6 @@ footer p {
 .link-card figcaption p {
   margin-left: 1.5em;
   margin-right: 1.5em;
-  /*margin-bottom: 0;*/
 }
 
 .points-card {
@@ -354,9 +353,8 @@ footer p {
     height: auto;
     width: 100%;
     left: auto;
-    transform: translateX(0);
+    transform: translateX(0) translateY(-50%);
     top: 50%;
-    transform: translateY(-50%);
   }
 }
 
@@ -413,7 +411,7 @@ footer p {
   }
 
   .collections {
-    padding-bottom: 10em;
+    overflow: hidden;
   }
 
   .collections .link-card:nth-child(4) {
